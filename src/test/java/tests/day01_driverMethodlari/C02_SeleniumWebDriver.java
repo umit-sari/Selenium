@@ -1,7 +1,9 @@
 
 package tests.day01_driverMethodlari;
 
+        import org.openqa.selenium.By;
         import org.openqa.selenium.WebDriver;
+        import org.openqa.selenium.WebElement;
         import org.openqa.selenium.chrome.ChromeDriver;
 
 public class C02_SeleniumWebDriver {
@@ -25,5 +27,7 @@ public class C02_SeleniumWebDriver {
             genellikle satin aldiklari bir driver'i kullanmanizi isterler
             bu durumda size verdikleri driver ile ilk satiri yazmalisiniz
          */
+
+
     }
 }

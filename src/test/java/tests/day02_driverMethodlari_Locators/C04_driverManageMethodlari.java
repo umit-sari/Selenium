@@ -1,8 +1,6 @@
 package tests.day02_driverMethodlari_Locators;
 
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.Point;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
@@ -13,10 +11,9 @@ public class C04_driverManageMethodlari {
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-
         // gorev odakli calisir, 15 saniye maximum bekleme suresidir
         // gorev daha once tamamlanirsa, yoluna devam eder
-        // 15 saiye icinde gorev tamamlanmazsa hata verir
+        // 15 saniye icinde gorev tamamlanmazsa hata verir
         // gorev : sayfanin acilmasi ve kullanilacak webelementlerin bulunmasidir
 
         System.out.println("maximize size :"+ driver.manage().window().getSize()); // (1382, 736) pixel
@@ -38,5 +35,6 @@ public class C04_driverManageMethodlari {
 
         Thread.sleep(3000); // java'dan gelir ve kodlari bekletir
         driver.close();
+
     }
 }
