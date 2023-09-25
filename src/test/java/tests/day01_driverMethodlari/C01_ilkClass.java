@@ -1,13 +1,11 @@
 package tests.day01_driverMethodlari;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class C01_ilkClass {
 
-    public static void main(String[] args) {
+    public static <WebDriver> void main(String[] args) {
 
         /* Test icin her class olusturdugumuzda
            ilk yapmamiz gereken WebDriver objesi olusturmaktir.
@@ -24,7 +22,7 @@ public class C01_ilkClass {
 
         // WebDriver objesi olusturalim
 
-        WebDriver driver = new ChromeDriver();
+        org.openqa.selenium.WebDriver driver=new ChromeDriver();
 
         // Artik bu driver objesi ile istenen otomasyonlari yapabiliriz
 

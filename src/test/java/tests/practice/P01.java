@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.time.chrono.ChronoLocalDate;
+
 public class P01 {
         /*
    /....Exercise-1:...
@@ -21,14 +23,13 @@ public class P01 {
   */
 
     //Create a new class with main method
-    public static void main(String[] args) throws InterruptedException {
+    public static <WebDriver> void main(String[] args) throws InterruptedException {
 
     //Set Path
         System.setProperty("webdriver.chrome.driver","kurulumDosyalari/chromedriver.exe");
 
     //  Create a chrome driver
-        WebDriver driver=new ChromeDriver();
-
+        org.openqa.selenium.WebDriver driver=new ChromeDriver();
     //  Maximize window
         driver.manage().window().maximize();
 
@@ -56,6 +57,7 @@ public class P01 {
 
     //And Last step print "All is well" on console
         System.out.println("All is well");
+
 
     }
 
